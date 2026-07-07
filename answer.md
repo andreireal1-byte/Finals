@@ -14,15 +14,15 @@ With Andean Condor:
 1. Install Gemini and sign up to your Google account.
 2. Tap the + icon from the chat box and attach the image you want to modify.
 
-![]interface.png
+![]IMG_6719.jpeg
 
 3. Tap the chat box and type "Add an Andean Condor to this picture" and tap send.
 
-![]chatbox.png
+![]IMG_6718.jpeg
 
 4. Once the image is generated, tap it and find the Save button.
 
-![]generated.png
+![]IMG_6720.jpeg
 
 **Result:**
 
