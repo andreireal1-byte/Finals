@@ -6,8 +6,9 @@ With Andean Condor:
 
 ## TASK 2: User Manual for Task 1
 **How to add an Andean Condor to this Image using AI (Gemini):**
+
 ![]template1.png
-This Manual will show you how to add 
+
 1. Step-by-Step Guide
 Break the process into clear, numbered steps:
  Step 1: Account Creation. Explain how you signed up. Requirement: Include a screenshot of the sign-up page.
