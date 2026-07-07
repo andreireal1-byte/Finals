@@ -28,5 +28,6 @@ With Andean Condor:
 
 ![](IMG_6722.png)
 
-##TASK 3: Graph
+## TASK 3: Graph
 
+![](graph.png)
