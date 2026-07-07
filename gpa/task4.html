@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <h1>Program: Electrical and Electronics Engineering (Major) (ENG) <span class="tooltip">ℹ️<span class="tooltiptext">GPA is calculated as the sum of (GP * Credits) divided by the sum of Credits. GP is determined by scores: 0-50 (0), 51-60 (1.0), 61-95 (increases by 0.08 per point), 96-100 (4.0).[span_0](start_span)[span_0](end_span)</span></span></h1>
+    <h1>Program: Electrical and Electronics Engineering (Major) (ENG) <span class="tooltip">ℹ️<span class="tooltiptext">GPA is calculated as the sum of (GP * Credits) divided by the sum of Credits. GP is determined by scores: 0-50 (0), 51-60 (1.0), 61-95 (increases by 0.08 per point), 96-100 (4.0).[span_1](start_span)[span_1](end_span)</span></span></h1>
 
     <table id="courseTable">
         <thead>
@@ -36,11 +36,16 @@
 
     <script>
         const courses = [
-            { name: "Introduction to Programming", credit: 6, grade: 0, passed: "No" },
-            { name: "Academic Techniques", credit: 6, grade: 0, passed: "No" },
-            { name: "Basics of Physics I", credit: 8, grade: 0, passed: "No" },
+            { name: "Introduction to Programming", credit: 6, grade: 85, passed: "Yes" },
+            { name: "Academic Techniques", credit: 6, grade: 75, passed: "Yes" },
+            { name: "Basics of Physics I", credit: 8, grade: 65, passed: "Yes" },
             { name: "Introduction to AI", credit: 6, grade: 0, passed: "No" },
-            { name: "Systems, Sustainability, and Climate change", credit: 6, grade: 51, passed: "Yes" }
+            { name: "Systems, Sustainability, and Climate change", credit: 6, grade: 51, passed: "Yes" },
+            { name: "Extra Course 1", credit: 6, grade: 100, passed: "Yes" },
+            { name: "Extra Course 2", credit: 6, grade: 100, passed: "Yes" },
+            { name: "Extra Course 3", credit: 6, grade: 100, passed: "Yes" },
+            { name: "Extra Course 4", credit: 6, grade: 100, passed: "Yes" },
+            { name: "Extra Course 5", credit: 6, grade: 100, passed: "Yes" }
         ];
 
         function getGP(score) {
@@ -52,7 +57,6 @@
 
         function renderTable() {
             const body = document.getElementById('courseBody');
-            body.innerHTML = '';
             courses.forEach(c => {
                 body.innerHTML += `<tr><td>${c.name}</td><td>${c.credit}</td><td>${c.grade}</td><td>${c.passed}</td></tr>`;
             });
@@ -66,19 +70,14 @@
                     totalCredits += c.credit;
                 }
             });
-            if(totalCredits === 0) {
-                document.getElementById('result').innerText = "GPA: 0.0";
-            } else {
-                document.getElementById('result').innerText = "GPA: " + (totalWeightedGP / totalCredits).toFixed(1);
-            }
+            document.getElementById('result').innerText = "GPA: " + (totalWeightedGP / totalCredits).toFixed(1);
         }
 
         function calculateAI() {
+            // Assume student has 50 current points in AI + 30 final points = 80
             const aiIndex = courses.findIndex(c => c.name === "Introduction to AI");
-            // Assuming current points 50 + 30 final points = 80[span_1](start_span)[span_1](end_span)
             courses[aiIndex].grade = 80;
             courses[aiIndex].passed = "Yes";
-            renderTable();
             calculateGPA();
         }
 
