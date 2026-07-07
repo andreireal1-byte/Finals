@@ -1,14 +1,14 @@
 ## TASK 1: Using generative AI
 Template Image:
-![]template1.png
+![]IMG_6712.jpeg
 
 With Andean Condor:
-![]task1.png
+![]IMG_6722.png
 
 ## TASK 2: User Manual for Task 1
 **How to add an Andean Condor to this Image using AI (Gemini):**
 
-![]template1.png
+![]IMG_6712.jpeg
 
 **Step-by-Step Guide**
 1. Install Gemini and sign up to your Google account.
@@ -26,7 +26,7 @@ With Andean Condor:
 
 **Result:**
 
-![]task1.png
+![]IMG_6722.png
 
 ##TASK 3: Graph
 
